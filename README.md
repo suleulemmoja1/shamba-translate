@@ -2,6 +2,9 @@
 
 Offline English–Swahili agricultural translator built with QVAC.
 
+## Video Demo
+https://youtu.be/sBmpVS2JrYo
+
 ## Problem
 Rural Kenyan farmers receive agricultural information in English but are more comfortable in Kiswahili, and cannot afford data bundles.
 
