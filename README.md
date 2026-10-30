@@ -32,7 +32,7 @@ HP laptop, Windows 10, 8 GB RAM. Translation runs on CPU.
 
 This is a small quantized model (INT8, ~89 MB), so some quality loss is expected. The purpose of this demo is to prove the offline QVAC pipeline works end to end, not to claim production-grade translation quality.
 
-I manually spot-checked a small set of agricultural-style English sentences against reference Swahili translations:
+
 
 | English input | App output (Swahili) | Assessment |
 |---------------|----------------------|------------|
