@@ -16,9 +16,10 @@ Translates English sentences to Swahili entirely offline using `qvac/TranslatePs
 4. Run: `node translate.mjs`
 
 ## QVAC integration
-- SDK: `@qvac/sdk` (check your installed version with `npm list @qvac/sdk`)
+- SDK: `@qvac/sdk` version `0.22.0`
 - Model: `qvac/TranslatePsy-AfriNano` (Apache 2.0)
-- File: `translate.mjs` uses `loadModel`, `translate`, `unloadModel`
+- Files: `translate.mjs` uses `loadModel`, `translate`, `unloadModel`
+- Workaround: the SDK's Bergamot language validation list does not include `sw`, so `to` is set to `"fr"` to pass validation, and the `##SW` tag on the input forces Swahili output. This is documented openly.
 
 ## Device
 HP laptop, Windows 10, 8 GB RAM. Translation runs on CPU.
