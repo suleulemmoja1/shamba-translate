@@ -20,9 +20,9 @@ Translates English sentences to Swahili entirely offline using `qvac/TranslatePs
 - **SDK/package:** `@qvac/sdk@0.22.0`
 - **Model:** `qvac/TranslatePsy-AfriNano` (Apache 2.0)
 - **File where QVAC is used:** `translate.mjs`
-- **Model loading:** `loadModel()` inside the `load()` function (lines 8–20), called on line 22 with `load("en-xx", "en", "fr")`
-- **Translation:** `translate()` inside `translateText()` (lines 23–26), called from the terminal input loop (lines 35–54)
-- **Model unloading:** `unloadModel()` on line 57, after the loop exits via `exit`
+- **Model loading:** `loadModel()` inside the `load()` function , called with `load("en-xx", "en", "fr")`
+- **Translation:** `translate()` inside `translateText()`, called from the terminal input loop
+- **Model unloading:** `unloadModel()` , after the loop exits via `exit`
 - **Workaround:** the SDK's Bergamot validation list does not include `sw`, so `to: "fr"` is used to pass validation, and the `##SW` tag on the input forces Swahili output. This is my adaptation, not the official method.
 
 ## Device
